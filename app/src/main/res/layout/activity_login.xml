@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bglogin"
+    android:padding="30dp"
+    android:backgroundTint="#CAE8FF"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/txt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="100dp"
+        android:fontFamily="@font/nunitobold"
+        android:text="GOFIT"
+        android:textColor="#2F80ED"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+    android:id="@+id/linearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/txt_login"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:layout_editor_absoluteX="16dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:hintTextColor="#2F80ED"
+        android:hint="Email"
+        app:errorEnabled="true"
+        app:helperText="Masukkan Email"
+        app:startIconDrawable="@drawable/ic_user_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="#2F80ED" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        app:endIconMode="password_toggle"
+        app:hintTextColor="#2F80ED"
+        app:errorEnabled="true"
+        app:helperText="Masukkan Password"
+        app:startIconDrawable="@drawable/ic_lock_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="#2F80ED"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginStart="240dp"
+            android:id="@+id/btn_jadwal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitoregular"
+            android:text="JADWAL"
+            android:textColor="#2F80ED"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="8dp" />
+    </LinearLayout>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearLayout1">
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="265dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:backgroundTint="#2F80ED"
+            android:fontFamily="@font/nunitobold"
+            android:shadowRadius="@integer/material_motion_duration_short_1"
+            android:text="Login"
+            android:textColor="#CAE8FF"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</RelativeLayout>
